@@ -373,8 +373,6 @@
                 if (fullName === "Kerry Von Erich") return "kerryvonerich";
                 if (fullName === "Kevin Von Erich") return "kevinvonerich";
                 if (fullName === "The Great Khali") return "khali";
-                if (fullName === "Ivan Koloff") return "ivankoloff";
-                if (fullName === "Nikita Koloff") return "nikitakoloff";
 
 
                 // Default to last word for other multi-word names
@@ -677,17 +675,17 @@
             {
                 name: "Sting",
                 description: "The Icon! A dark and mysterious defender of justice.",
-                baseHp: 110,
-                strength: 92,
-                technicalAbility: 84,
-                brawlingAbility: 91,
-                stamina: 98,
-                aerialAbility: 78,
+                baseHp: getRandomInt(95, 110),
+                strength: getRandomInt(80, 95),
+                technicalAbility: getRandomInt(70, 85),
+                brawlingAbility: getRandomInt(75, 90),
+                stamina: getRandomInt(80, 95),
+                aerialAbility: getRandomInt(55, 75),
                 moves: {
-                    grapple: { name: "Stinger Splash", damage: { min: 12, max: 21 }, baseHitChance: 0.95, stat: 'brawlingAbility' },
-                    strike: { name: "Scorpion Deathdrop", damage: { min: 25, max: 35 }, baseHitChance: 0.9, stat: 'technicalAbility' },
+                    grapple: { name: "Stinger Splash", damage: { min: 12, max: 18 }, baseHitChance: 0.95, stat: 'brawlingAbility' },
+                    strike: { name: "Diving Splash", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'aerialAbility' },
                     highFlying: { name: "Top Rope Crossbody", damage: { min: 11, max: 17 }, baseHitChance: 0.75, stat: 'aerialAbility' },
-                    finisher: { name: "Scorpion Deathlock", damage: { min: 25, max: 35 }, baseHitChance: 0.9, stat: 'technicalAbility' }
+                    finisher: { name: "Scorpion Deathdrop", damage: { min: 25, max: 35 }, baseHitChance: 0.9, stat: 'technicalAbility' }
                 }
             },
             {
@@ -837,12 +835,12 @@
             {
                 name: "Ultimate Warrior",
                 description: "Feel the power of the Warrior! Intense and energetic.",
-                baseHp: 105,
-                strength: 98,
-                technicalAbility: 43,
-                brawlingAbility: 90,
-                stamina: 72,
-                aerialAbility: 25,
+                baseHp: getRandomInt(100, 115),
+                strength: getRandomInt(90, 100),
+                technicalAbility: getRandomInt(40, 60),
+                brawlingAbility: getRandomInt(85, 100),
+                stamina: getRandomInt(70, 85),
+                aerialAbility: getRandomInt(10, 25),
                 moves: {
                     grapple: { name: "Gorilla Press Slam", damage: { min: 18, max: 25 }, baseHitChance: 0.85, stat: 'strength' },
                     strike: { name: "Flying Clothesline", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'brawlingAbility' },
@@ -901,16 +899,16 @@
             {
                 name: "Lex Luger",
                 description: "The Total Package. Imposing physique and powerful moves.",
-                baseHp: 110,
-                strength: 98,
-                technicalAbility: 70,
-                brawlingAbility: 93,
-                stamina: 92,
-                aerialAbility: 30,
+                baseHp: getRandomInt(95, 110),
+                strength: getRandomInt(85, 100),
+                technicalAbility: getRandomInt(50, 70),
+                brawlingAbility: getRandomInt(75, 90),
+                stamina: getRandomInt(70, 85),
+                aerialAbility: getRandomInt(10, 30),
                 moves: {
                     grapple: { name: "Bionic Forearm", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'strength' },
                     strike: { name: "Elbow Drop", damage: { min: 9, max: 14 }, baseHitChance: 0.6, stat: 'strength' },
-                    highFlying: { name: "Powerslam", damage: { min: 12, max: 19 }, baseHitChance: 0.7, stat: 'strength' },
+                    highFlying: { name: "Powerslam", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'strength' },
                     finisher: { name: "Torture Rack", damage: { min: 28, max: 38 }, baseHitChance: 0.9, stat: 'strength' }
                 }
             },
@@ -1141,12 +1139,12 @@
             {
                 name: "Brock Lesnar",
                 description: "The Beast Incarnate! Dominant and destructive.",
-                baseHp: 115,
-                strength: 98,
-                technicalAbility: 87,
-                brawlingAbility: 91,
-                stamina: 90,
-                aerialAbility: 22,
+                baseHp: getRandomInt(105, 120),
+                strength: getRandomInt(95, 100),
+                technicalAbility: getRandomInt(50, 70),
+                brawlingAbility: getRandomInt(85, 100),
+                stamina: getRandomInt(80, 95),
+                aerialAbility: getRandomInt(1, 20),
                 moves: {
                     grapple: { name: "German Suplex", damage: { min: 15, max: 21 }, baseHitChance: 0.8, stat: 'strength' },
                     strike: { name: "Kimura Lock", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'technicalAbility' },
@@ -1205,12 +1203,12 @@
             {
                 name: "Terry Gordy",
                 description: "One of the Fabulous Freebirds. A tough and hard-hitting brawler.",
-                baseHp: 105,
-                strength: 89,
-                technicalAbility: 74,
-                brawlingAbility: 92,
-                stamina: 90,
-                aerialAbility: 30,
+                baseHp: getRandomInt(95, 110),
+                strength: getRandomInt(85, 100),
+                technicalAbility: getRandomInt(50, 70),
+                brawlingAbility: getRandomInt(90, 100),
+                stamina: getRandomInt(75, 90),
+                aerialAbility: getRandomInt(10, 30),
                 moves: {
                     grapple: { name: "Lariat", damage: { min: 14, max: 20 }, baseHitChance: 0.78, stat: 'brawlingAbility' },
                     strike: { name: "Big Splash", damage: { min: 10, max: 16 }, baseHitChance: 0.6, stat: 'strength' },
@@ -1221,12 +1219,12 @@
             {
                 name: "Stan Hansen",
                 description: "The Lariat. A wild and intense Texan brawler.",
-                baseHp: 110,
-                strength: 93,
-                technicalAbility: 68,
-                brawlingAbility: 98,
-                stamina: 89,
-                aerialAbility: 20,
+                baseHp: getRandomInt(100, 115),
+                strength: getRandomInt(90, 100),
+                technicalAbility: getRandomInt(30, 50),
+                brawlingAbility: getRandomInt(95, 100),
+                stamina: getRandomInt(70, 85),
+                aerialAbility: getRandomInt(5, 20),
                 moves: {
                     grapple: { name: "Piledriver", damage: { min: 15, max: 22 }, baseHitChance: 0.85, stat: 'brawlingAbility' },
                     strike: { name: "Elbow Drop", damage: { min: 10, max: 16 }, baseHitChance: 0.6, stat: 'brawlingAbility' },
@@ -1269,12 +1267,12 @@
             {
                 name: "Road Warrior Hawk",
                 description: "Ohhhhh, what a rush! Half of the Legion of Doom.",
-                baseHp: 108,
-                strength: 91,
-                technicalAbility: 42,
-                brawlingAbility: 94,
-                stamina: 82,
-                aerialAbility: 66,
+                baseHp: getRandomInt(100, 115),
+                strength: getRandomInt(90, 100),
+                technicalAbility: getRandomInt(40, 60),
+                brawlingAbility: getRandomInt(90, 100),
+                stamina: getRandomInt(70, 85),
+                aerialAbility: getRandomInt(5, 20),
                 moves: {
                     grapple: { name: "Clothesline", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'brawlingAbility' },
                     strike: { name: "Flying Shoulder Tackle", damage: { min: 10, max: 16 }, baseHitChance: 0.6, stat: 'strength' },
@@ -1285,12 +1283,12 @@
             {
                 name: "Road Warrior Animal",
                 description: "What a rush! The other half of the Legion of Doom.",
-                baseHp: 105,
-                strength: 95,
-                technicalAbility: 55,
-                brawlingAbility: 94,
-                stamina: 80,
-                aerialAbility: 40,
+                baseHp: getRandomInt(100, 115),
+                strength: getRandomInt(90, 100),
+                technicalAbility: getRandomInt(40, 60),
+                brawlingAbility: getRandomInt(90, 100),
+                stamina: getRandomInt(70, 85),
+                aerialAbility: getRandomInt(5, 20),
                 moves: {
                     grapple: { name: "Power Slam", damage: { min: 17, max: 24 }, baseHitChance: 0.82, stat: 'strength' },
                     strike: { name: "Clothesline", damage: { min: 14, max: 20 }, baseHitChance: 0.78, stat: 'brawlingAbility' },
@@ -1381,16 +1379,16 @@
             {
                 name: "Vader",
                 description: "The Mastodon. A dominant super-heavyweight.",
-                baseHp: 115,
-                strength: 98,
-                technicalAbility: 60,
-                brawlingAbility: 96,
-                stamina: 87,
-                aerialAbility: 41,
+                baseHp: getRandomInt(110, 125),
+                strength: getRandomInt(95, 100),
+                technicalAbility: getRandomInt(40, 60),
+                brawlingAbility: getRandomInt(90, 100),
+                stamina: getRandomInt(60, 75),
+                aerialAbility: getRandomInt(10, 25),
                 moves: {
-                    grapple: { name: "Fist Strikes", damage: { min: 13, max: 20 }, baseHitChance: 0.8, stat: 'brawlingAbility' },
+                    grapple: { name: "Powerbomb", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'strength' },
                     strike: { name: "Moonsault (from top)", damage: { min: 12, max: 18 }, baseHitChance: 0.7, stat: 'strength' },
-                    highFlying: { name: "Chokeslam", damage: { min: 10, max: 18 }, baseHitChance: 0.7, stat: 'strength' },
+                    highFlying: { name: "Chokeslam", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'strength' },
                     finisher: { name: "Vader Bomb", damage: { min: 30, max: 40 }, baseHitChance: 0.92, stat: 'strength' }
                 }
             },
@@ -1429,31 +1427,31 @@
             {
                 name: "Harley Race",
                 description: "The King. Eight-time NWA World Champion.",
-                baseHp: 105,
-                strength: 85,
-                technicalAbility: 87,
-                brawlingAbility: 94,
-                stamina: 93,
-                aerialAbility: 28,
+                baseHp: getRandomInt(95, 110),
+                strength: getRandomInt(80, 95),
+                technicalAbility: getRandomInt(70, 85),
+                brawlingAbility: getRandomInt(80, 95),
+                stamina: getRandomInt(85, 100),
+                aerialAbility: getRandomInt(10, 30),
                 moves: {
                     grapple: { name: "Knee Drop", damage: { min: 12, max: 18 }, baseHitChance: 0.78, stat: 'brawlingAbility' },
                     strike: { name: "Headbutt", damage: { min: 10, max: 16 }, baseHitChance: 0.6, stat: 'brawlingAbility' },
-                    highFlying: { name: "Vertical Suplex", damage: { min: 13, max: 18 }, baseHitChance: 0.7, stat: 'strength' },
+                    highFlying: { name: "Vertical Suplex", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'strength' },
                     finisher: { name: "Piledriver", damage: { min: 27, max: 37 }, baseHitChance: 0.9, stat: 'strength' }
                 }
             },
             {
                 name: "Roddy Piper",
                 description: "Rowdy. One of the greatest talkers and most unpredictable.",
-                baseHp: 100,
-                strength: 83,
-                technicalAbility: 81,
-                brawlingAbility: 96,
-                stamina: 90,
-                aerialAbility: 20,
+                baseHp: getRandomInt(85, 100),
+                strength: getRandomInt(65, 80),
+                technicalAbility: getRandomInt(60, 75),
+                brawlingAbility: getRandomInt(90, 100),
+                stamina: getRandomInt(75, 90),
+                aerialAbility: getRandomInt(15, 35),
                 moves: {
                     grapple: { name: "Eye Poke", damage: { min: 5, max: 10 }, baseHitChance: 0.9, stat: 'brawlingAbility' },
-                    strike: { name: "Punch Flurry", damage: { min: 12, max: 18 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
+                    strike: { name: "Punch Flurry", damage: { min: 8, max: 13 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
                     highFlying: { name: "Low Blow", damage: { min: 7, max: 12 }, baseHitChance: 0.65, stat: 'brawlingAbility' },
                     finisher: { name: "Sleeper Hold", damage: { min: 24, max: 34 }, baseHitChance: 0.9, stat: 'brawlingAbility' }
                 }
@@ -1461,12 +1459,12 @@
             {
                 name: "The Great Muta",
                 description: "The Essence of Muta. A mystical and dangerous Japanese legend.",
-                baseHp: 100,
-                strength: 81,
-                technicalAbility: 86,
-                brawlingAbility: 94,
-                stamina: 92,
-                aerialAbility: 90,
+                baseHp: getRandomInt(90, 105),
+                strength: getRandomInt(75, 90),
+                technicalAbility: getRandomInt(80, 95),
+                brawlingAbility: getRandomInt(80, 95),
+                stamina: getRandomInt(80, 95),
+                aerialAbility: getRandomInt(70, 90),
                 moves: {
                     grapple: { name: "Dragon Screw", damage: { min: 10, max: 16 }, baseHitChance: 0.78, stat: 'technicalAbility' },
                     strike: { name: "Handspring Elbow", damage: { min: 12, max: 18 }, baseHitChance: 0.75, stat: 'aerialAbility' },
@@ -1477,12 +1475,12 @@
             {
                 name: "Rick Steiner",
                 description: "The Dog-Faced Gremlin. A powerful and aggressive amateur wrestling powerhouse.",
-                baseHp: 100,
-                strength: 91,
-                technicalAbility: 86,
-                brawlingAbility: 90,
-                stamina: 88,
-                aerialAbility: 29,
+                baseHp: getRandomInt(95, 110),
+                strength: getRandomInt(90, 100),
+                technicalAbility: getRandomInt(70, 85),
+                brawlingAbility: getRandomInt(80, 95),
+                stamina: getRandomInt(85, 100),
+                aerialAbility: getRandomInt(15, 30),
                 moves: {
                     grapple: { name: "Steinerline", damage: { min: 15, max: 22 }, baseHitChance: 0.85, stat: 'strength' },
                     strike: { name: "Bulldog", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
@@ -1600,278 +1598,6 @@
                     strike: { name: "Chop", damage: { min: 9, max: 14 }, baseHitChance: 0.75, stat: 'brawlingAbility' },
                     highFlying: { name: "Diving Crossbody", damage: { min: 12, max: 18 }, baseHitChance: 0.85, stat: 'aerialAbility' },
                     finisher: { name: "Double Chicken Wing", damage: { min: 26, max: 36 }, baseHitChance: 0.92, stat: 'technicalAbility' }
-                }
-            },
-            {
-                name: "Arn Anderson",
-                description: "The Enforcer. Master of the Spinebuster and a founding member of The Four Horsemen.",
-                baseHp: getRandomInt(90, 105),
-                strength: getRandomInt(80, 95),
-                technicalAbility: getRandomInt(85, 95),
-                brawlingAbility: getRandomInt(75, 90),
-                stamina: getRandomInt(75, 90),
-                aerialAbility: getRandomInt(15, 30),
-                moves: {
-                    grapple: { name: "Spinebuster", damage: { min: 13, max: 19 }, baseHitChance: 0.85, stat: 'strength' },
-                    strike: { name: "Gourdbuster", damage: { min: 10, max: 16 }, baseHitChance: 0.75, stat: 'technicalAbility' },
-                    highFlying: { name: "DDT", damage: { min: 9, max: 14 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
-                    finisher: { name: "Double A Spinebuster", damage: { min: 26, max: 36 }, baseHitChance: 0.9, stat: 'strength' }
-                }
-            },
-            {
-                name: "Mark Henry",
-                description: "The World's Strongest Man. An absolute powerhouse.",
-                baseHp: getRandomInt(130, 150),
-                strength: getRandomInt(98, 100),
-                technicalAbility: getRandomInt(30, 50),
-                brawlingAbility: getRandomInt(90, 100),
-                stamina: getRandomInt(60, 75),
-                aerialAbility: getRandomInt(1, 5),
-                moves: {
-                    grapple: { name: "World's Strongest Slam", damage: { min: 18, max: 25 }, baseHitChance: 0.85, stat: 'strength' },
-                    strike: { name: "Big Splash", damage: { min: 15, max: 22 }, baseHitChance: 0.75, stat: 'strength' },
-                    highFlying: { name: "Press Slam", damage: { min: 12, max: 18 }, baseHitChance: 0.7, stat: 'strength' },
-                    finisher: { name: "Mark Henry's Powerslam", damage: { min: 30, max: 40 }, baseHitChance: 0.92, stat: 'strength' }
-                }
-            },
-            {
-                name: "Brian Pillman",
-                description: "The Loose Cannon. Unpredictable, high-flying, and intense.",
-                baseHp: getRandomInt(80, 95),
-                strength: getRandomInt(65, 80),
-                technicalAbility: getRandomInt(75, 90),
-                brawlingAbility: getRandomInt(80, 95),
-                stamina: getRandomInt(80, 95),
-                aerialAbility: getRandomInt(85, 100),
-                moves: {
-                    grapple: { name: "Air Pillman (Springboard Clothesline)", damage: { min: 12, max: 18 }, baseHitChance: 0.8, stat: 'aerialAbility' },
-                    strike: { name: "Flying Crossbody", damage: { min: 10, max: 16 }, baseHitChance: 0.75, stat: 'aerialAbility' },
-                    highFlying: { name: "Missile Dropkick", damage: { min: 11, max: 17 }, baseHitChance: 0.7, stat: 'aerialAbility' },
-                    finisher: { name: "Pillmanizer (Pillman's Neckbreaker)", damage: { min: 25, max: 35 }, baseHitChance: 0.9, stat: 'technicalAbility' }
-                }
-            },
-            {
-                name: "Larry Zbyszko",
-                description: "The Living Legend. Technically gifted and a master of mind games.",
-                baseHp: 103,
-                strength: 76,
-                technicalAbility: 92,
-                brawlingAbility: 76,
-                stamina: 89,
-                aerialAbility: 25,
-                moves: {
-                    grapple: { name: "Abdominal Stretch", damage: { min: 10, max: 16 }, baseHitChance: 0.78, stat: 'technicalAbility' },
-                    strike: { name: "Piledriver", damage: { min: 12, max: 18 }, baseHitChance: 0.7, stat: 'strength' },
-                    highFlying: { name: "Running Knee Drop", damage: { min: 10, max: 14 }, baseHitChance: 0.65, stat: 'brawlingAbility' },
-                    finisher: { name: "Larryland Dreamer (Guillotine Choke)", damage: { min: 24, max: 34 }, baseHitChance: 0.9, stat: 'technicalAbility' }
-                }
-            },
-            {
-                name: "Nick Bockwinkel",
-                description: "The Smartest Wrestler Alive. A scientific and articulate champion.",
-                baseHp: 100,
-                strength: 82,
-                technicalAbility: 96,
-                brawlingAbility: 74,
-                stamina: 92,
-                aerialAbility: 28,
-                moves: {
-                    grapple: { name: "Piledriver", damage: { min: 12, max: 18 }, baseHitChance: 0.78, stat: 'technicalAbility' },
-                    strike: { name: "Atomic Drop", damage: { min: 9, max: 14 }, baseHitChance: 0.65, stat: 'strength' },
-                    highFlying: { name: "Figure-Four Leglock", damage: { min: 14, max: 19 }, baseHitChance: 0.7, stat: 'technicalAbility' },
-                    finisher: { name: "Bockwinkel's Sleeper", damage: { min: 26, max: 36 }, baseHitChance: 0.95, stat: 'technicalAbility' }
-                }
-            },
-            {
-                name: "Nikita Koloff",
-                description: "The Russian Nightmare. A powerful and intense Soviet-era wrestler.",
-                baseHp: getRandomInt(100, 115),
-                strength: getRandomInt(90, 100),
-                technicalAbility: getRandomInt(60, 80),
-                brawlingAbility: getRandomInt(85, 100),
-                stamina: getRandomInt(80, 95),
-                aerialAbility: getRandomInt(10, 25),
-                moves: {
-                    grapple: { name: "Bearhug", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'strength' },
-                    strike: { name: "Russian Sickle (Clothesline)", damage: { min: 18, max: 25 }, baseHitChance: 0.9, stat: 'brawlingAbility' },
-                    highFlying: { name: "Running Elbow Drop", damage: { min: 10, max: 16 }, baseHitChance: 0.65, stat: 'brawlingAbility' },
-                    finisher: { name: "Russian Sickle", damage: { min: 28, max: 38 }, baseHitChance: 0.92, stat: 'brawlingAbility' }
-                }
-            },
-            {
-                name: "Ivan Koloff",
-                description: "The Russian Bear. A brutal and unforgiving powerhouse.",
-                baseHp: getRandomInt(95, 110),
-                strength: getRandomInt(85, 95),
-                technicalAbility: getRandomInt(50, 70),
-                brawlingAbility: getRandomInt(90, 100),
-                stamina: getRandomInt(75, 90),
-                aerialAbility: getRandomInt(5, 20),
-                moves: {
-                    grapple: { name: "Bearhug", damage: { min: 14, max: 20 }, baseHitChance: 0.78, stat: 'strength' },
-                    strike: { name: "Knee Drop", damage: { min: 9, max: 14 }, baseHitChance: 0.6, stat: 'brawlingAbility' },
-                    highFlying: { name: "Belly-to-Belly Suplex", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'strength' },
-                    finisher: { name: "Russian Sickle (Clothesline)", damage: { min: 27, max: 37 }, baseHitChance: 0.9, stat: 'brawlingAbility' }
-                }
-            },
-            {
-                name: "The Miz",
-                description: "The A-Lister. Arrogant, cunning, and surprisingly resilient.",
-                baseHp: getRandomInt(85, 100),
-                strength: getRandomInt(65, 80),
-                technicalAbility: getRandomInt(70, 85),
-                brawlingAbility: getRandomInt(75, 90),
-                stamina: getRandomInt(80, 95),
-                aerialAbility: getRandomInt(30, 50),
-                moves: {
-                    grapple: { name: "Skull-Crushing Finale", damage: { min: 13, max: 19 }, baseHitChance: 0.78, stat: 'technicalAbility' },
-                    strike: { name: "Reality Check (running knee lift)", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
-                    highFlying: { name: "Awesome Clothesline", damage: { min: 9, max: 14 }, baseHitChance: 0.65, stat: 'brawlingAbility' },
-                    finisher: { name: "Figure-Four Leglock", damage: { min: 25, max: 35 }, baseHitChance: 0.9, stat: 'technicalAbility' }
-                }
-            },
-            {
-                name: "Gunther",
-                description: "The Ring General. Dominant, powerful, and technically precise.",
-                baseHp: getRandomInt(100, 115),
-                strength: getRandomInt(90, 100),
-                technicalAbility: getRandomInt(80, 95),
-                brawlingAbility: getRandomInt(85, 100),
-                stamina: getRandomInt(80, 95),
-                aerialAbility: getRandomInt(10, 25),
-                moves: {
-                    grapple: { name: "Powerbomb", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'strength' },
-                    strike: { name: "Chop!", damage: { min: 18, max: 25 }, baseHitChance: 0.9, stat: 'brawlingAbility' },
-                    highFlying: { name: "Dropkick", damage: { min: 10, max: 16 }, baseHitChance: 0.65, stat: 'strength' },
-                    finisher: { name: "Sleeper Hold", damage: { min: 28, max: 38 }, baseHitChance: 0.92, stat: 'technicalAbility' }
-                }
-            },
-            {
-                name: "Braun Strowman",
-                description: "The Monster Among Men. An unstoppable force of nature.",
-                baseHp: getRandomInt(110, 125),
-                strength: getRandomInt(95, 100),
-                technicalAbility: getRandomInt(40, 60),
-                brawlingAbility: getRandomInt(90, 100),
-                stamina: getRandomInt(70, 85),
-                aerialAbility: getRandomInt(10, 20),
-                moves: {
-                    grapple: { name: "Running Powerslam", damage: { min: 18, max: 25 }, baseHitChance: 0.85, stat: 'strength' },
-                    strike: { name: "Strowman Express (Running Shoulder Tackle)", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'brawlingAbility' },
-                    highFlying: { name: "Big Boot", damage: { min: 12, max: 18 }, baseHitChance: 0.7, stat: 'strength' },
-                    finisher: { name: "Running Powerslam", damage: { min: 30, max: 40 }, baseHitChance: 0.92, stat: 'strength' }
-                }
-            },
-            {
-                name: "Bray Wyatt",
-                description: "The Eater of Worlds/The Fiend. Mysterious, psychological, and dangerous.",
-                baseHp: getRandomInt(95, 110),
-                strength: getRandomInt(80, 95),
-                technicalAbility: getRandomInt(60, 80),
-                brawlingAbility: getRandomInt(85, 100),
-                stamina: getRandomInt(75, 90),
-                aerialAbility: getRandomInt(20, 40),
-                moves: {
-                    grapple: { name: "Sister Abigail", damage: { min: 15, max: 22 }, baseHitChance: 0.85, stat: 'brawlingAbility' },
-                    strike: { name: "Mandible Claw", damage: { min: 12, max: 18 }, baseHitChance: 0.75, stat: 'brawlingAbility' },
-                    highFlying: { name: "Senton", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
-                    finisher: { name: "Sister Abigail", damage: { min: 28, max: 38 }, baseHitChance: 0.92, stat: 'brawlingAbility' }
-                }
-            },
-            {
-                name: "Bron Breakker",
-                description: "Steiner bloodline, powerful and athletic.",
-                baseHp: getRandomInt(90, 105),
-                strength: getRandomInt(85, 100),
-                technicalAbility: getRandomInt(70, 85),
-                brawlingAbility: getRandomInt(75, 90),
-                stamina: getRandomInt(80, 95),
-                aerialAbility: getRandomInt(30, 50),
-                moves: {
-                    grapple: { name: "Military Press Slam", damage: { min: 12, max: 18 }, baseHitChance: 0.78, stat: 'strength' },
-                    strike: { name: "Spear", damage: { min: 15, max: 22 }, baseHitChance: 0.8, stat: 'brawlingAbility' },
-                    highFlying: { name: "Frankensteiner", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'aerialAbility' },
-                    finisher: { name: "Steiner Recliner", damage: { min: 26, max: 36 }, baseHitChance: 0.9, stat: 'strength' }
-                }
-            },
-            {
-                name: "Dan Spivey",
-                description: "Towering and powerful, a formidable opponent.",
-                baseHp: getRandomInt(95, 110),
-                strength: getRandomInt(85, 95),
-                technicalAbility: getRandomInt(50, 70),
-                brawlingAbility: getRandomInt(80, 95),
-                stamina: getRandomInt(70, 85),
-                aerialAbility: getRandomInt(10, 25),
-                moves: {
-                    grapple: { name: "Powerbomb", damage: { min: 13, max: 19 }, baseHitChance: 0.78, stat: 'strength' },
-                    strike: { name: "Big Boot", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
-                    highFlying: { name: "Spinebuster", damage: { min: 9, max: 14 }, baseHitChance: 0.65, stat: 'strength' },
-                    finisher: { name: "Spivey Spike (DDT)", damage: { min: 25, max: 35 }, baseHitChance: 0.9, stat: 'brawlingAbility' }
-                }
-            },
-            {
-                name: "Daniel Bryan",
-                description: "The American Dragon. Technical wizard and submission specialist.",
-                baseHp: getRandomInt(85, 100),
-                strength: getRandomInt(65, 80),
-                technicalAbility: getRandomInt(95, 100),
-                brawlingAbility: getRandomInt(70, 85),
-                stamina: getRandomInt(90, 100),
-                aerialAbility: getRandomInt(50, 70),
-                moves: {
-                    grapple: { name: "Yes Kicks", damage: { min: 8, max: 13 }, baseHitChance: 0.8, stat: 'brawlingAbility' },
-                    strike: { name: "Diving Headbutt", damage: { min: 11, max: 17 }, baseHitChance: 0.75, stat: 'aerialAbility' },
-                    highFlying: { name: "Suicide Dive", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'aerialAbility' },
-                    finisher: { name: "Yes Lock (Omoplata Crossface)", damage: { min: 25, max: 35 }, baseHitChance: 0.95, stat: 'technicalAbility' }
-                }
-            },
-            {
-                name: "Omos",
-                description: "The Nigerian Giant. Imposing size and strength.",
-                baseHp: getRandomInt(150, 170),
-                strength: getRandomInt(98, 100),
-                technicalAbility: getRandomInt(20, 40),
-                brawlingAbility: getRandomInt(90, 100),
-                stamina: getRandomInt(50, 65),
-                aerialAbility: getRandomInt(1, 5),
-                moves: {
-                    grapple: { name: "Chokeslam", damage: { min: 20, max: 30 }, baseHitChance: 0.8, stat: 'strength' },
-                    strike: { name: "Big Boot", damage: { min: 15, max: 22 }, baseHitChance: 0.75, stat: 'strength' },
-                    highFlying: { name: "Press Slam", damage: { min: 12, max: 18 }, baseHitChance: 0.7, stat: 'strength' },
-                    finisher: { name: "Two-Handed Chokeslam", damage: { min: 35, max: 45 }, baseHitChance: 0.92, stat: 'strength' }
-                }
-            },
-            {
-                name: "Luke Harper",
-                description: "The Exalted One. Powerful, agile, and intense.",
-                baseHp: getRandomInt(95, 110),
-                strength: getRandomInt(85, 95),
-                technicalAbility: getRandomInt(65, 80),
-                brawlingAbility: getRandomInt(80, 95),
-                stamina: getRandomInt(75, 90),
-                aerialAbility: getRandomInt(30, 50),
-                moves: {
-                    grapple: { name: "Discus Lariat", damage: { min: 15, max: 22 }, baseHitChance: 0.85, stat: 'brawlingAbility' },
-                    strike: { name: "Truck Stop (spinning side slam)", damage: { min: 12, max: 18 }, baseHitChance: 0.75, stat: 'strength' },
-                    highFlying: { name: "Big Boot", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
-                    finisher: { name: "Brodie Bomb (Running Senton)", damage: { min: 27, max: 37 }, baseHitChance: 0.9, stat: 'strength' }
-                }
-            },
-            {
-                name: "R-Truth",
-                description: "Truth will set you free! Energetic and comedic, but can get serious.",
-                baseHp: getRandomInt(80, 95),
-                strength: getRandomInt(65, 80),
-                technicalAbility: getRandomInt(70, 85),
-                brawlingAbility: getRandomInt(70, 85),
-                stamina: getRandomInt(80, 95),
-                aerialAbility: getRandomInt(60, 75),
-                moves: {
-                    grapple: { name: "Lie Detector (Corkscrew Scissor Kick)", damage: { min: 12, max: 18 }, baseHitChance: 0.78, stat: 'aerialAbility' },
-                    strike: { name: "Little Jimmy (jumping reverse STO)", damage: { min: 10, max: 16 }, baseHitChance: 0.7, stat: 'brawlingAbility' },
-                    highFlying: { name: "Flying Forearm", damage: { min: 9, max: 14 }, baseHitChance: 0.65, stat: 'brawlingAbility' },
-                    finisher: { name: "Axe Kick", damage: { min: 24, max: 34 }, baseHitChance: 0.9, stat: 'brawlingAbility' }
                 }
             }
         ];
