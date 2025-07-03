@@ -1,2 +1,0 @@
-# iwf
-Internet Wrestling Federation
